@@ -1,3 +1,5 @@
+![GitHub Releases](https://img.shields.io/github/downloads/sneat/starter-scene-packer/latest/total) ![GitHub Releases](https://img.shields.io/github/downloads/sneat/starter-scene-packer/total)
+
 # Starter module for using Scene Packer
 
 This module can be used as a starting point when creating your own Foundry VTT Module that utilises the features supported by [Library: Scene Packer](https://github.com/League-of-Foundry-Developers/scene-packer).
