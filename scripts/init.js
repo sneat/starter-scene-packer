@@ -56,6 +56,18 @@
    *   const playlistPacks = [];
    */
   const playlistPacks = [`${moduleName}.playlists`];
+  /**
+   * additionalModulePacks is a list of modules whose compendium packs can be looked in for entities by name (in prioritised order).
+   * Enter just the "name" of the module/s or system/s you want to be considered.
+   * For example, if you wanted to allow the packs from
+   * the [Free Loot Tavern's Magic Item Vault]{@link https://foundryvtt.com/packages/free-loot-tavern-compendium}
+   * and [Dynamic Active Effects SRD]{@link https://foundryvtt.com/packages/Dynamic-Effects-SRD}
+   * modules to be searchable:
+   *   const additionalModulePacks= ['free-loot-tavern-compendium', 'Dynamic-Effects-SRD'];
+   * Set to the following to disable:
+   *   const additionalModulePacks = [];
+   */
+  const additionalModulePacks = ['dnd5e'];
 
   Hooks.once('scenePackerReady', ScenePacker => {
     // Initialise the Scene Packer with your adventure name and module name
@@ -66,6 +78,7 @@
       journalPacks,
       macroPacks,
       playlistPacks,
+      additionalModulePacks,
       welcomeJournal,
       additionalJournals,
       additionalMacros,
