@@ -8,6 +8,10 @@ Make use of this module if you are new to making [Foundry VTT modules](https://f
 
 ## How to use
 
+Just head on over to https://sneat.github.io/scene-packer-module-generator/ and fill in the appropriate fields. This repository forms the basis of the module that gets downloaded from https://sneat.github.io/scene-packer-module-generator/
+
+Alternatively, if you want to do it manually...
+
 Follow these steps to convert `starter-scene-packer` into your very own module compatible with [Scene Packer](https://github.com/League-of-Foundry-Developers/scene-packer).
 
 If you get stuck at any stage, feel free to stop by the [<img src="https://github.com/League-of-Foundry-Developers/scene-packer/raw/main/assets/icons/hand-truck.png" alt="icon" height="24" valign="middle">
