@@ -4,7 +4,7 @@
   "description": "A starting point for creating modules with Scene Packer functionality.",
   "version": "1.0.0",
   "minimumCoreVersion": "0.7.9",
-  "compatibleCoreVersion": "0.8.9",
+  "compatibleCoreVersion": "9",
   "author": "Blair McMillan",
   "authors": [
     {
@@ -25,43 +25,50 @@
       "name": "maps",
       "label": "Starter Scene Packer",
       "path": "/packs/maps.db",
-      "entity": "Scene"
+      "entity": "Scene",
+      "type": "Scene"
     },
     {
       "name": "actors",
       "label": "Starter Scene Packer",
       "path": "/packs/actors.db",
-      "entity": "Actor"
+      "entity": "Actor",
+      "type": "Actor"
     },
     {
       "name": "journals",
       "label": "Starter Scene Packer",
       "path": "/packs/journals.db",
-      "entity": "JournalEntry"
+      "entity": "JournalEntry",
+      "type": "JournalEntry"
     },
     {
       "name": "items",
       "label": "Starter Scene Packer",
       "path": "/packs/items.db",
-      "entity": "Item"
+      "entity": "Item",
+      "type": "Item"
     },
     {
       "name": "rolltables",
       "label": "Starter Scene Packer",
       "path": "/packs/rolltables.db",
-      "entity": "RollTable"
+      "entity": "RollTable",
+      "type": "RollTable"
     },
     {
       "name": "macros",
       "label": "Starter Scene Packer",
       "path": "/packs/macros.db",
-      "entity": "Macro"
+      "entity": "Macro",
+      "type": "Macro"
     },
     {
       "name": "playlists",
       "label": "Starter Scene Packer",
       "path": "/packs/playlists.db",
-      "entity": "Playlist"
+      "entity": "Playlist",
+      "type": "Playlist"
     }
   ],
   "esmodules": [
