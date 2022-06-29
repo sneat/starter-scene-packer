@@ -3,8 +3,8 @@
   "title": "Starter for Scene Packer",
   "description": "A starting point for creating modules with Scene Packer functionality.",
   "version": "1.0.0",
-  "minimumCoreVersion": "0.7.9",
-  "compatibleCoreVersion": "9",
+  "minimumCoreVersion": "0.8.6",
+  "compatibleCoreVersion": "10",
   "author": "Blair McMillan",
   "authors": [
     {
