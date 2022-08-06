@@ -1,4 +1,5 @@
 {
+  "id": "starter-scene-packer",
   "name": "starter-scene-packer",
   "title": "Starter for Scene Packer",
   "description": "A starting point for creating modules with Scene Packer functionality.",
