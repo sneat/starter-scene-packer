@@ -28,13 +28,6 @@
   ],
   "packs": [
     {
-      "name": "maps",
-      "label": "Starter Scene Packer",
-      "path": "/packs/maps.db",
-      "entity": "Scene",
-      "type": "Scene"
-    },
-    {
       "name": "actors",
       "label": "Starter Scene Packer",
       "path": "/packs/actors.db",
@@ -42,11 +35,18 @@
       "type": "Actor"
     },
     {
-      "name": "journals",
+      "name": "adventure",
       "label": "Starter Scene Packer",
-      "path": "/packs/journals.db",
-      "entity": "JournalEntry",
-      "type": "JournalEntry"
+      "path": "/packs/adventure.db",
+      "entity": "Adventure",
+      "type": "Adventure"
+    },
+    {
+      "name": "cards",
+      "label": "Starter Scene Packer",
+      "path": "/packs/cards.db",
+      "entity": "Cards",
+      "type": "Cards"
     },
     {
       "name": "items",
@@ -56,11 +56,11 @@
       "type": "Item"
     },
     {
-      "name": "rolltables",
+      "name": "journals",
       "label": "Starter Scene Packer",
-      "path": "/packs/rolltables.db",
-      "entity": "RollTable",
-      "type": "RollTable"
+      "path": "/packs/journals.db",
+      "entity": "JournalEntry",
+      "type": "JournalEntry"
     },
     {
       "name": "macros",
@@ -70,11 +70,25 @@
       "type": "Macro"
     },
     {
+      "name": "maps",
+      "label": "Starter Scene Packer",
+      "path": "/packs/maps.db",
+      "entity": "Scene",
+      "type": "Scene"
+    },
+    {
       "name": "playlists",
       "label": "Starter Scene Packer",
       "path": "/packs/playlists.db",
       "entity": "Playlist",
       "type": "Playlist"
+    },
+    {
+      "name": "rolltables",
+      "label": "Starter Scene Packer",
+      "path": "/packs/rolltables.db",
+      "entity": "RollTable",
+      "type": "RollTable"
     }
   ],
   "esmodules": [
