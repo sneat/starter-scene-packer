@@ -5,11 +5,10 @@
   "description": "A starting point for creating modules with Scene Packer functionality.",
   "version": "1.0.0",
   "minimumCoreVersion": "0.8.6",
-  "compatibleCoreVersion": "10",
+  "compatibleCoreVersion": "11",
   "compatibility": {
     "minimum": "0.8.6",
-    "verified": "10",
-    "maximum": "10"
+    "verified": "11"
   },
   "author": "Blair McMillan",
   "authors": [
