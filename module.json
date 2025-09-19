@@ -1,104 +1,156 @@
 {
   "id": "starter-scene-packer",
-  "name": "starter-scene-packer",
   "title": "Starter for Scene Packer",
   "description": "A starting point for creating modules with Scene Packer functionality.",
   "version": "1.0.0",
-  "minimumCoreVersion": "0.8.6",
-  "compatibleCoreVersion": "12",
   "compatibility": {
-    "minimum": "0.8.6",
-    "verified": "12"
+    "minimum": "12",
+    "verified": "13"
   },
-  "author": "Blair McMillan",
   "authors": [
     {
       "name": "Blair McMillan",
       "discord": "blair#9056",
-      "ko-fi": "blairm",
-      "patreon": "blairm"
+      "url": "https://www.patreon.com/blairm"
     }
   ],
   "media": [
     {
-      "type": "icon",
-      "url": "https://raw.githubusercontent.com/League-of-Foundry-Developers/scene-packer/main/assets/icons/hand-truck.png"
+      "type": "setup",
+      "url": "modules/starter-scene-packer/assets/cover.png",
+      "thumbnail": "modules/starter-scene-packer/assets/cover-thumbnail.png"
     }
   ],
   "packs": [
     {
       "name": "actors",
       "label": "Starter Scene Packer",
-      "path": "/packs/actors.db",
-      "entity": "Actor",
-      "type": "Actor"
+      "path": "./packs/actors",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "NONE",
+        "TRUSTED": "NONE",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "name": "adventure",
       "label": "Starter Scene Packer",
-      "path": "/packs/adventure.db",
-      "entity": "Adventure",
-      "type": "Adventure"
+      "path": "./packs/adventure",
+      "type": "Adventure",
+      "ownership": {
+        "PLAYER": "NONE",
+        "TRUSTED": "NONE",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "name": "cards",
       "label": "Starter Scene Packer",
-      "path": "/packs/cards.db",
-      "entity": "Cards",
-      "type": "Cards"
+      "path": "./packs/cards",
+      "type": "Cards",
+      "ownership": {
+        "PLAYER": "NONE",
+        "TRUSTED": "NONE",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "name": "items",
       "label": "Starter Scene Packer",
-      "path": "/packs/items.db",
-      "entity": "Item",
-      "type": "Item"
+      "path": "./packs/items",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "NONE",
+        "TRUSTED": "NONE",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "name": "journals",
       "label": "Starter Scene Packer",
-      "path": "/packs/journals.db",
-      "entity": "JournalEntry",
-      "type": "JournalEntry"
+      "path": "./packs/journals",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "NONE",
+        "TRUSTED": "NONE",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "name": "macros",
       "label": "Starter Scene Packer",
-      "path": "/packs/macros.db",
-      "entity": "Macro",
-      "type": "Macro"
+      "path": "./packs/macros",
+      "type": "Macro",
+      "ownership": {
+        "PLAYER": "NONE",
+        "TRUSTED": "NONE",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "name": "maps",
       "label": "Starter Scene Packer",
-      "path": "/packs/maps.db",
-      "entity": "Scene",
-      "type": "Scene"
+      "path": "./packs/maps",
+      "type": "Scene",
+      "ownership": {
+        "PLAYER": "NONE",
+        "TRUSTED": "NONE",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "name": "playlists",
       "label": "Starter Scene Packer",
-      "path": "/packs/playlists.db",
-      "entity": "Playlist",
-      "type": "Playlist"
+      "path": "./packs/playlists",
+      "type": "Playlist",
+      "ownership": {
+        "PLAYER": "NONE",
+        "TRUSTED": "NONE",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "name": "rolltables",
       "label": "Starter Scene Packer",
-      "path": "/packs/rolltables.db",
-      "entity": "RollTable",
-      "type": "RollTable"
+      "path": "./packs/rolltables",
+      "type": "RollTable",
+      "ownership": {
+        "PLAYER": "NONE",
+        "TRUSTED": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "Starter Scene Packer",
+      "sorting": "m",
+      "color": "#0000ff",
+      "packs": [
+        "actors",
+        "cards",
+        "items",
+        "journals",
+        "macros",
+        "maps",
+        "playlists",
+        "rolltables"
+      ],
+      "folders": [
+        {
+          "name": "Adventure",
+          "sorting": "a",
+          "color": "#ff0000",
+          "packs": [
+            "adventure"
+          ]
+        }
+      ]
     }
   ],
   "esmodules": [
     "./scripts/init.js"
-  ],
-  "dependencies": [
-    {
-      "name": "scene-packer",
-      "manifest": "https://github.com/League-of-Foundry-Developers/scene-packer/releases/latest/download/module.json",
-      "type": "module"
-    }
   ],
   "relationships": {
     "requires": [
@@ -111,6 +163,5 @@
   },
   "url": "https://github.com/sneat/starter-scene-packer",
   "manifest": "https://github.com/sneat/starter-scene-packer/releases/latest/download/module.json",
-  "download": "https://github.com/sneat/starter-scene-packer/releases/latest/download/module.zip",
-  "manifestPlusVersion": "1.2.0"
+  "download": "https://github.com/sneat/starter-scene-packer/releases/latest/download/module.zip"
 }

@@ -32,20 +32,21 @@ The process:
     - On Windows by default, you should then have a folder structure like:
         - `%localappdata%/FoundryVTT/Data/modules/starter-scene-packer`
         - For example: `c:\Users\blairm\AppData\local\FoundryVTT\Data\modules\starter-scene-packer`
-3. Rename the `starter-scene-packer` folder to your `unique module identifier`. This must be all lower-case, have no special characters and use hyphens (not underscores) to seperate terms (don't use spaces). See the `name` section of [Required Manifest Attributes](https://foundryvtt.com/article/module-development/#requirements) for full details.
+3. Rename the `starter-scene-packer` folder to your `unique module identifier`. This must be all lower-case, have no special characters and use hyphens (not underscores) to separate terms (don't use spaces). See the `id` section of [Required Manifest Attributes](https://foundryvtt.com/article/module-development/#requirements) for full details.
     - Future references to this folder will be `your-module-folder`.
 4. As an aside, if you are new to editing code, consider opening `your-module-folder` within VS Code as a [workspace](https://code.visualstudio.com/docs/editor/workspaces#_singlefolder-workspaces).
 5. Edit the `module.json` file within your newly renamed `your-module-folder` to replace the example references with your own. Refer to the [official documentation](https://foundryvtt.com/article/module-development/#requirements) for full details.
-    1. `name` - This **must** be the same as the folder name (e.g. `your-module-folder`).
+    1. `id` - This **must** be the same as the folder name (e.g. `your-module-folder`).
     2. `title` - This is the name that end-users will see within Foundry VTT, primarily within the Settings menu where they will enable your module.
     3. `description` - This is the description of your module, primarily seen within the Settings menu where they will enable your module.
     4. `version` - Keep this at `1.0.0` for now. Use this field when you release new versions or updates (fixing typos etc.). If you update it in the future, it is recommended to increment the "patch" portion such as `1.0.1`, followed by `1.0.2` etc. (see [Semantic Versioning](https://semver.org/) for additional information).
-    5. `author` and `authors` - Update these with your details and delete any that don't apply. See [Authors](https://foundryvtt.wiki/en/development/manifest-plus#authors) on the Foundry VTT Wiki for supported options.
-    6. `media` - Update these values if possible, following the [Media guide](https://foundryvtt.wiki/en/development/manifest-plus#media) on the Foundry VTT Wiki. If you don't have any media, delete the `media` block.
+    5. `authors` - Update this with your details and delete any that don't apply.
+    6. `media` - Update these values. They are seen in the module listing page within Foundry VTT. If you don't have any media, delete the `media` block.
     7. `packs` - These are the compendium packs within your module. For each of them, change the `label` value to whatever you want. The value you set here your end users will see in the `Compendium` tab within Foundry VTT.
-    8. `url` - Change to whatever URL is appropriate for you. This might be your Patreon page, or your website or anything else.
-    9. `manifest` - Leave this for now. We will change it later.
-    10. `download` - Leave this for now. We will change it later.
+    8. `packFolders` - These are the folders that your compendiums will appear in.
+    9. `url` - Change to whatever URL is appropriate for you. This might be your Patreon page, or your website or anything else.
+    10. `manifest` - Leave this for now. We will change it later.
+    11. `download` - Leave this for now. We will change it later.
 6. Validate your `module.json` file. There are lots of websites that you can use to validate the file, one of which is https://jsonlint.com/ 
 7. Edit the `scripts/init.js` file within `your-module-folder`
     1. Change the value of `adventureName` to whatever name you would like Scene Packer to refer to your module as during dialogs and when creating folders. This is likely to be the same as the `title` field within the `module.json` file.
